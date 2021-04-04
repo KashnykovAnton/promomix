@@ -1,0 +1,615 @@
+:root {
+  --main-font: "TT Norms", sans-serif;
+  --main-red: #e52322;
+  --main-grey: #b0b6bf;
+  --main-black: #1f2c37;
+  --main-white: #ffffff;
+  --main-bcg-gray: #f2f4f7;
+}
+
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  width: 1600px;
+  color: var(--main-black);
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  text-transform: inherit;
+  font-weight: inherit;
+}
+
+button:hover,
+button:focus,
+a:focus,
+a:hover {
+  color: var(--main-red);
+}
+
+/* img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
+
+.section {
+  padding-bottom: 200px;
+  outline: 1px solid green;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 37px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--main-grey);
+}
+
+/* ХЕДЕР */
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation .logo,
+.navigation-list .list-item button,
+.navigation-list .list-item a {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.navigation-list .list-item:not(:last-child) {
+  margin-right: 120px;
+}
+
+.list-item button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navigation .list-item img {
+  margin-right: 9px;
+}
+
+.navigation .list-item:first-child {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.navigation .list-item:last-child {
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.navigation .list-item:nth-child(2) {
+  font-size: 15px;
+}
+
+/* ГЕРОЙ */
+.hero {
+  background-image: url("../images/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.hero .container {
+  padding-top: 568px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.hero a {
+  padding: 0;
+  margin: 0;
+}
+
+.hero h1 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 1.2;
+  padding-bottom: 70px;
+  color: var(--main-white);
+}
+
+.hero h1 span {
+  text-transform: capitalize;
+  color: var(--main-red);
+}
+
+.social-list {
+  display: flex;
+  cursor: pointer;
+  font-size: 14px;
+  padding-bottom: 70px;
+  color: var(--main-white);
+}
+
+.social-list li:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* УСЛУГИ */
+.features h2 {
+  margin-bottom: 100px;
+}
+
+.features h2 span {
+  color: var(--main-red);
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -60px;
+  margin-top: -60px;
+}
+
+.features-list .list-item {
+  flex-basis: calc((100% - 60px * 4) / 4);
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+.features-list .link {
+  padding-top: 40px;
+  padding-right: 45px;
+  padding-bottom: 42px;
+  padding-left: 40px;
+}
+
+.features-list .list-item:nth-child(1) p {
+  padding-right: 55px;
+}
+
+.features-list p {
+  font-size: 19px;
+  line-height: 1.3;
+  color: var(--main-black);
+}
+
+.feature {
+  margin-bottom: 53px;
+  width: 70px;
+  height: 70px;
+  fill: var(--main-red);
+}
+
+.features-list .list-item:hover,
+.features-list .list-item:focus {
+  background-color: var(--main-red);
+}
+
+.features-list .list-item:hover .feature,
+.features-list .list-item:focus .feature {
+  fill: var(--main-white);
+}
+
+.features-list .list-item:hover p,
+.features-list .list-item:focus p {
+  color: var(--main-white);
+}
+
+/* ПРЕИМУЩЕСТВА */
+.advantages {
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 6%,
+    rgb(242, 244, 246) 6%
+  );
+}
+
+/* Как правильно сделать заливку ??? */
+
+.advantages span {
+  color: var(--main-red);
+}
+
+.advantages .container {
+  display: flex;
+  /* justify-content: space-between;
+  margin-right: auto; */
+}
+
+.advantages .wrap-left {
+  min-width: 570px;
+  /* height: 680px; */
+  padding-top: 151px;
+  padding-right: 100px;
+  padding-bottom: 363px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -60px;
+  margin-top: -60px;
+}
+
+.advantages-list .list-item {
+  flex-basis: calc((100% - 60px * 2) / 2);
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+.advantages .wrap-right {
+  padding-top: 147px;
+  padding-right: 80px;
+  padding-bottom: 150px;
+  padding-left: 60px;
+}
+
+.advantages-list .title {
+  font-size: 75px;
+  line-height: 1;
+  color: var(--main-red);
+}
+
+.advantages-list .text {
+  line-height: 1.4;
+}
+
+.advantages-list .title::after {
+  content: "";
+  display: flex;
+  width: 70px;
+  height: 1px;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  background-color: var(--main-grey);
+}
+
+/* РАБОТЫ */
+.works span {
+  color: var(--main-red);
+}
+
+.works h2 {
+  margin-bottom: 60px;
+}
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: -60px;
+  margin-bottom: 80px;
+}
+
+.works-list .list-item {
+  flex-basis: calc((100% - 60px * 2) / 2);
+  margin-left: 60px;
+}
+
+.works-list img {
+  margin-bottom: 20px;
+}
+
+.works-list h3 {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.works-list p {
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--main-grey);
+}
+
+/* Как добавить ПЛЮС??? */
+
+.works .all {
+  position: relative;
+  /* right: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.works .all img {
+  width: 23px;
+  height: 23px;
+  /* stroke: currentColor; */
+}
+
+/* .works .all::before {
+  position: absolute;
+  content: "\0002B";
+  font-size: 23px;
+  display: inline-flex;
+  width: 1000px;
+  height: 1px;
+  margin-right: 48px;
+  background-color: currentColor;
+} */
+
+.works .all::after {
+  position: absolute;
+  content: "";
+  display: inline-flex;
+  width: 1000px;
+  height: 1px;
+  margin-right: 48px;
+  margin-left: 48px;
+  background-color: currentColor;
+}
+
+/* ПАРТНЕРЫ */
+.partners {
+  background-color: var(--main-bcg-gray);
+}
+
+/* Как правильно сделать заливку ??? */
+
+.partners span {
+  color: var(--main-red);
+}
+
+.partners .container {
+  display: flex;
+}
+
+.partners .wrap-left {
+  min-width: 570px;
+  padding-top: 177px;
+  padding-right: 150px;
+  padding-bottom: 381px;
+}
+
+.partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+.partners-list .list-item {
+  flex-basis: calc((100% - 50px * 3) / 3);
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.partners .wrap-right {
+  padding-top: 166px;
+  padding-bottom: 167px;
+  padding-left: 60px;
+}
+
+/* СТАТЬИ */
+.posts span {
+  color: var(--main-red);
+}
+
+.posts h2 {
+  margin-bottom: 98px;
+}
+
+.posts .list-item {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.posts .list-item:last-child {
+  margin-bottom: 80px;
+}
+
+.posts .wrap-left {
+  display: flex;
+  justify-content: space-between;
+  min-width: 570px;
+  margin-right: 60px;
+}
+/* Возможно стоит использовать inline-flex? */
+
+.posts .wrap-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-subtitle {
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--main-grey);
+  margin-right: 85px;
+}
+
+.posts h3 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.post-text {
+  line-height: 1.5;
+  margin-bottom: auto;
+}
+
+.post-button {
+  margin-bottom: 42px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.post-button button::before {
+  content: "→";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+}
+
+.posts .list-item:hover h3,
+.posts .list-item:focus h3 {
+  color: var(--main-red);
+}
+
+.posts .list-item:hover .post-button,
+.posts .list-item:focus .post-button {
+  color: var(--main-red);
+}
+
+.posts .list-item:hover,
+.posts .list-item:focus {
+  cursor: pointer;
+}
+
+/* Как добавить + ?? */
+.posts .all::before {
+  content: "";
+  display: inline-flex;
+  width: 1000px;
+  height: 1px;
+  margin-right: 48px;
+  background-color: currentColor;
+}
+
+/* ФУТЕР */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left,
+.footer-right {
+  width: 50%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-left span {
+  color: var(--main-red);
+  display: block;
+}
+
+.footer-left a {
+  margin-bottom: 60px;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.footer-left {
+  padding-right: 239px;
+}
+
+.footer-left button {
+  padding: 22px 44px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid var(--main-red);
+  cursor: pointer;
+}
+
+.footer-right {
+  display: flex;
+}
+
+.footer-right nav,
+.footer-right div {
+  width: 50%;
+}
+
+.footer-right div {
+  padding-right: 30px;
+}
+
+.footer-right a {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.fr-text {
+  margin-bottom: 64px;
+  /* padding-right: 30px; */
+  line-height: 1.5;
+}
+
+.footer-form input {
+  padding-bottom: 15px;
+  border: none;
+}
+
+.footer-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--main-black);
+}
+
+.footer-form button {
+  border: none;
+  cursor: pointer;
+}
+
+/* .footer-form:focus input::placeholder,
+.footer-form:hover input::placeholder {
+  color: var(--main-red);
+  cursor: pointer;
+}
+
+.footer-form:focus,
+.footer-form:hover {
+  border-color: var(--main-red);
+} */
+
+/* .footer-form input::placeholder {
+  background-color: green;
+} */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-top: 43px; */
+  /* padding-bottom: 43px; */
+}
+
+.footer-bottom ul {
+  display: flex;
+}
+
+.footer-bottom li:not(:last-child) {
+  margin-right: 32px;
+}
+
+.footer-bottom a {
+  padding-top: 43px;
+  padding-bottom: 43px;
+}
